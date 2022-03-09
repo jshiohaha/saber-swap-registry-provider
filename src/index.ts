@@ -17,7 +17,7 @@ export type RegistryEndpoint = string;
 // ================================================
 // saber provider to help find pool info from mints
 // ================================================
-export class SaberRegsitryProvider {
+export class SaberRegistryProvider {
   // navigate from cluster -> mints -> pool
   pools!: Map<Cluster, Map<string, Pool>>;
   // provide O(1) lookup to check if there is a pool for a mint. this does not guaruntee
