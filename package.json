@@ -1,0 +1,34 @@
+{
+    "name": "saber-swap-registry-provider",
+    "version": "0.0.1",
+    "description": "package to fetch saber registry data",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "dist/cjs/index.d.ts",
+    "files": [
+        "/dist"
+    ],
+    "scripts": {
+        "clean": "rimraf ./dist",
+        "build": "yarn clean && yarn build:esm && yarn build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+    },
+    "keywords": [
+        "solana",
+        "saber stable swap",
+        "saber registry"
+    ],
+    "author": "jshiohaha",
+    "license": "MIT",
+    "dependencies": {
+        "@saberhq/stableswap-sdk": "^1.12.48",
+        "@solana/spl-token": "^0.1.8",
+        "@solana/web3.js": "^1.31.0",
+        "fetch": "^1.1.0",
+        "rimraf": "^3.0.2"
+    },
+    "devDependencies": {
+        "typescript": "^4.3.5"
+    }
+}
