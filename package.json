@@ -1,7 +1,7 @@
 {
     "name": "saber-swap-registry-provider",
     "version": "0.0.1",
-    "description": "package to fetch saber registry data",
+    "description": "simple package to provide saber registry data",
     "main": "./dist/cjs/index.js",
     "module": "./dist/esm/index.js",
     "types": "dist/cjs/index.d.ts",
